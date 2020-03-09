@@ -90,10 +90,10 @@ def station_stats(df):
     start_time = time.time()
     # TO DO: display most commonly used start station
     pop_start_station= df['Start Station'].mode()[0]
-    print('Most popular start station: ', pop_start_station)
+    print('Most commonly used start station: ', pop_start_station)
     # TO DO: display most commonly used end station
     pop_end_station = df['End Station'].mode()[0]
-    print('Most popular end station: ', pop_end_station)
+    print('Most commonly used end station: ', pop_end_station)
     # TO DO: display most frequent combination of start station and end station trip
     freq_combination=df.groupby(['Start Station', 'End Station']).size().nlargest(1)
     print('Most frequent combination of start station and end station: ', freq_combination)
@@ -135,12 +135,12 @@ def user_stats(df, city):
           gender = df['Gender'].value_counts()
           print('Gender count: ', gender)
           # TO DO: Display earliest, most recent, and most common year of birth
-          earliest_year_birth = df['Birth Year'].min()
-          print('Earliest year of birth: ', earliest_year_birth)
-          most_recent_year_birth = df['Birth Year'].max()
-          print('Most recent birth year:', most_recent_year_birth)
-          common_year_birth=df['Birth Year'].mode()[0]
-          print('Most common year of birth: ', common_year_birth)
+          earliest_y_birth = df['Birth Year'].min()
+          print('Earliest year of birth: ', earliest_y_birth)
+          most_recent_y_birth = df['Birth Year'].max()
+          print('Most recent birth year:', most_recent_y_birth)
+          common_y_birth=df['Birth Year'].mode()[0]
+          print('Most common year of birth: ', common_y_birth)
 
 
 
