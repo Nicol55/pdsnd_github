@@ -5,9 +5,7 @@
 Analysis of Bikeshare Data in Python
 
 ### Description
-Analysis of bikeshare data of the cities Chicago, New York and Washington.
-Filtering by month and day
-Showcasing user data
+Analysis of bikeshare data of the cities Chicago, New York and Washington. The code gives an interface where the user can interact with the data. They an filter by month and day as well as they can get an overview of the user data. 
 
 ### Files used
 washington.csv
